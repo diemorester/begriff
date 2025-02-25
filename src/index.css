@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+@font-face {
+    font-family: 'SilkSerif';
+    src: url("../src/assets/fonts/SilkSerif-TRIAL-ExtraLight-BF6740066e530ef.ttf") format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SilkSerif';
+    src: url("../src/assets/fonts/SilkSerif-TRIAL-Light-BF6740066e4d5cb.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SilkSerif';
+    src: url("../src/assets/fonts/SilkSerif-TRIAL-Regular-BF6740066e17571.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SilkSerif';
+    src: url("../src/assets/fonts/SilkSerif-TRIAL-SemiBold-BF6740066dc0446.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SilkSerif';
+    src: url("../src/assets/fonts/SilkSerif-TRIAL-Bold-BF6740066e7ab50.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SilkSerif';
+    src: url("../src/assets/fonts/SilkSerif-TRIAL-ExtraLightItalic-BF6740066e6496e.ttf") format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SilkSerif';
+    src: url("../src/assets/fonts/SilkSerif-TRIAL-LightItalic-BF6740066e6e2fc.ttf") format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SilkSerif';
+    src: url("../src/assets/fonts/SilkSerif-TRIAL-RegularItalic-BF6740066e0d112.ttf") format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SilkSerif';
+    src: url("../src/assets/fonts/SilkSerif-TRIAL-SemiBoldItalic-BF6740066dcfd29.ttf") format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SilkSerif';
+    src: url("../src/assets/fonts/SilkSerif-TRIAL-BoldItalic-BF6740066e5c6ae.ttf") format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-begriff: IBM Plex Sans, sans-serif;
+    --font-begriff-serif: SilkSerif, serif;
+    --font-gugi: Gugi, sans-serif;
+    --color-begriff-green: #2C3639;
+    --color-begriff-white: #DCD7C9;
+    --color-begriff-brown: #A27B5C;
+}
