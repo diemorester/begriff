@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { HiMiniBars3, HiMiniBars3BottomLeft, HiXMark } from "react-icons/hi2";
-import img0 from "../assets/logo-full.png"
 
 const NavBar = () => {
     const [activeSection, setActiveSection] = useState("home");
@@ -49,7 +48,7 @@ const NavBar = () => {
         ${isScrolled ? "bg-[#242d2f]/85 backdrop:blur-md" : "bg-begriff-green"}`}>
             <a href="#home">
                 <img
-                    src={img0} 
+                    src="/logo-full.png"
                     width={168}
                     height={168}
                     alt="logo"
