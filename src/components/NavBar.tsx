@@ -48,7 +48,7 @@ const NavBar = () => {
         ${isScrolled ? "bg-[#242d2f]/85 backdrop:blur-md" : "bg-begriff-green"}`}>
             <a href="#home">
                 <img
-                    src="/assets/logo-full.png"
+                    src="src\assets\logo-full.png" 
                     width={168}
                     height={168}
                     alt="logo"
