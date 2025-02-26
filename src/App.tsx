@@ -1,4 +1,5 @@
 import AboutUs from "./components/AboutUs"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import NavBar from "./components/NavBar"
 import Promo from "./components/Promo"
@@ -12,6 +13,7 @@ const App = () => {
       <AboutUs />
       <Promo />
       <Shop />
+      <Footer />
     </>
   )
 }
