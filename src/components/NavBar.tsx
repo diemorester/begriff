@@ -113,11 +113,11 @@ const NavBar = () => {
                 ))}
                 <div id="navitems" className="fixed top-5 right-3 md:right-10 flex items-center gap-x-4 md:gap-x-6 z-50">
                     <a
-                        href="/"
+                        href="#contact"
                         className={`relative px-2 py-1 md:px-5 md:py-3 rounded-4xl border overflow-hidden transition-all duration-300 group 
                             ${isSidebarOpen
-                                ? "border bg-black border-black text-begriff-white hover:bg-begriff-brown hover:border-begriff-brown"
-                                : "border bg-begriff-white border-begriff-white text-begriff-green hover:bg-black hover:border-black hover:text-begriff-white"
+                                ? "border bg-black border-black text-begriff-white hover:bg-begriff-white hover:border-black hover:text-black"
+                                : "border bg-begriff-white border-begriff-white text-begriff-green hover:bg-begriff-green hover:border-begriff-white hover:text-begriff-white"
                             }`}
                     >
                         <span
