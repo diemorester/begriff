@@ -81,3 +81,25 @@
     --color-begriff-white: #DCD7C9;
     --color-begriff-brown: #A27B5C;
 }
+
+@layer utilities {
+    .disable-scroll {
+        overflow: hidden;
+    }
+
+    .disable-scroll::-webkit-scrollbar {
+        pointer-events: none;
+    }
+}
+
+html {
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
