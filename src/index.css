@@ -77,9 +77,13 @@
     --font-begriff: IBM Plex Sans, sans-serif;
     --font-begriff-serif: SilkSerif, serif;
     --font-gugi: Gugi, sans-serif;
+    --color-footer-head: #4d5f64;
+    --color-footer-body: #a6afb1;
     --color-begriff-green: #2C3639;
+    --color-begriff-dark-green: #242d2f;
     --color-begriff-white: #DCD7C9;
     --color-begriff-brown: #A27B5C;
+    --breakpoint-3xl: 130rem;
 }
 
 @layer utilities {
