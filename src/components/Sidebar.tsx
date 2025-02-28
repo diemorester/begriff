@@ -66,7 +66,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, closeSidebar, modalRef
                         <p className="font-begriff text-xs md:text-sm text-black/50 pt-1 pb-2">
                             Jl. Kyai Tapa No.101, Tomang, Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11440
                         </p>
-                        <p className="font-begriff font-semibold pt-2">+62 819 3210 6158</p>
+                        <p className="font-begriff pt-2">+62 819 3210 6158</p>
                     </div>
                 </div>
                 <div className="md:row-start-5 md:pt-4 px-11 md:px-[82px] w-full h-full">
