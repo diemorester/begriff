@@ -179,6 +179,12 @@ const NavBar = () => {
                 </div>
                 <Sidebar isSidebarOpen={isSidebarOpen} closeSidebar={() => setIsSidebarOpen(false)} modalRef={modalRef} />
             </div>
+            {isSidebarOpen === true && <motion.div
+                className="fixed top-0 right-0 w-full h-screen bg-black/80 z-10 pointer-events-none"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: isSidebarOpen ? 100 : 0 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+            ></motion.div>}
         </div>
     );
 };
