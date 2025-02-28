@@ -69,7 +69,7 @@ const NavBar = () => {
         { name: "Home", id: "home" },
         { name: "About Us", id: "about" },
         { name: "Promo", id: "promo" },
-        { name: "Shop", id: "shop" },
+        { name: "Menu", id: "menu" }
     ];
 
     return (
@@ -111,6 +111,23 @@ const NavBar = () => {
                         </div>
                     </a>
                 ))}
+                <a
+                    href="https://gofood.co.id/en/jakarta/restaurant/begriff-kaffee-grogol-302a801f-f216-4e19-b5a1-f36316f0ae17"
+                    target="_blank"
+                    className={`relative hidden md:block md:min-w-24 min-h-12 text-center place-content-center active:scale-95 rounded-3xl overflow-hidden 
+                        ${activeSection === "contact"
+                            ? "border border-begriff-white bg-transparent font-begriff-serif italic"
+                            : `group transition duration-300 ${isScrolled ? "border border-[#242d2f]/85 hover:border-begriff-white" : "border border-begriff-green hover:border-begriff-white"}`
+                        }`}>
+                    <div className="relative overflow-hidden">
+                        <span className="block transition-transform duration-300 ease-in-out group-hover:-translate-y-6">
+                            Shop
+                        </span>
+                        <span className="absolute left-0 top-6 w-full italic font-begriff-serif transition-transform duration-300 ease-in-out group-hover:-translate-y-6">
+                            Shop
+                        </span>
+                    </div>
+                </a>
                 <div id="navitems" className="fixed top-5 right-3 md:right-10 flex items-center gap-x-4 md:gap-x-6 z-50">
                     <a
                         href="#contact"
@@ -153,7 +170,7 @@ const NavBar = () => {
                                 transition={{ duration: 0.3, ease: "easeInOut" }}
                                 className="flex items-center gap-x-2"
                             >
-                                <p>Menu</p>
+                                <p>More</p>
                                 {isHovered ? <HiMiniBars3BottomLeft size={20} /> : <HiMiniBars3 size={20} />}
                             </motion.div>
 
