@@ -1,6 +1,8 @@
 const Menu = () => {
   return (
-    <section id="menu" className="w-full h-screen bg-begriff-green">Menu</section>
+    <section id="menu" className="w-full min-h-screen bg-begriff-green">
+      <div></div>
+    </section>
   )
 }
 
