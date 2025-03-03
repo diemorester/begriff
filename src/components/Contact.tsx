@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
         <div>
           <p className="font-begriff font-bold text-sm md:text-base text-footer-head">SOCIALS</p>
-          <div className="flex flex-col font-begriff pt-0.5">
+          <div className="flex flex-col font-begriff pt-0.5 px-0.5">
             <a
               href="https://www.instagram.com/begriffkaffee/"
               target="_blank"
@@ -37,7 +37,7 @@ const Contact = () => {
         </div>
         <div>
           <p className="font-begriff font-bold text-sm md:text-base text-footer-head">SHOP</p>
-          <div className="flex flex-col font-begriff pt-0.5">
+          <div className="flex flex-col font-begriff pt-0.5 px-0.5">
             <a
               href="https://gofood.co.id/en/jakarta/restaurant/begriff-kaffee-grogol-302a801f-f216-4e19-b5a1-f36316f0ae17"
               target="_blank"

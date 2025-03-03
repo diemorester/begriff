@@ -78,8 +78,8 @@ const NavBar = () => {
             <a href="#home">
                 <img
                     src="logo-full.png"
-                    width={168}
-                    height={168}
+                    width={69}
+                    height={69}
                     alt="logo"
                     className="w-12 h-12 active:scale-95"
                 />
