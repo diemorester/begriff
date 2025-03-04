@@ -25,7 +25,7 @@ const AboutUs = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false }}
-      className="w-full h-screen px-8 md:px-24 flex flex-col justify-center md:gap-y-8 items-center relative bg-begriff-green"
+      className="w-full h-screen px-8 md:px-24 flex flex-col justify-center gap-y-6 md:gap-y-8 items-center relative bg-begriff-green"
     >
       <motion.div variants={itemVariants} custom={0} className="font-begriff-serif w-full space-x-5 z-0">
         <span className="italic border mt-[14px] text-sm rounded-3xl block float-left px-2 py-1 md:px-3 md:py-[6px] place-content-center text-center border-begriff-white text-begriff-white">About Us</span>
@@ -33,13 +33,13 @@ const AboutUs = () => {
         <AboutUsContent text="incidunt impedit, facere, aspernatur consequatur distinctio at iure quia obcaecati," />
         <AboutUsContent text="explicabo reiciendis suscipit tempore eaque? Quaerat, exercitationem dolorem!" />
       </motion.div>
-      <motion.div className="flex justify-between w-full">
+      <motion.div className="flex flex-col md:flex-row gap-y-3 justify-between w-full">
         <motion.div
           variants={itemVariants}
           custom={1}
           initial="hidden"
           whileInView="visible"
-          className="font-begriff text-begriff-white tracking-wider text-sm"
+          className="font-begriff text-begriff-white tracking-wider text-xs md:text-sm"
         >
           <p>GAK PROPORSIONAL</p>
           <p>GAK WELL-ALLIGNED JUGA</p>
@@ -50,7 +50,7 @@ const AboutUs = () => {
           custom={1.1}
           initial="hidden"
           whileInView="visible"
-          className="font-begriff font-extralight text-sm tracking-wider text-begriff-white/85 md:pt-8"
+          className="font-begriff font-extralight text-xs md:text-sm md:tracking-wider text-begriff-white/85 md:pt-8"
         >
           <p>Kan bole kali pak Mekel desain abstrak2 gitu, kalo khas orang miskin maapin pak.</p>
           <p>ab dolorum debitis saepe eum quasi assumenda minus quod. Recusandae voluptatem eligendi,</p>
