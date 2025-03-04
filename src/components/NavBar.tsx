@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { HiMiniBars3, HiMiniBars3BottomLeft, HiXMark } from "react-icons/hi2";
 import Sidebar from "./Sidebar";
-import img0 from './../../public/logo-full.svg'
+import img0 from '/logo-full.svg'
 
 const NavBar = () => {
     const [activeSection, setActiveSection] = useState("home");
@@ -56,7 +56,7 @@ const NavBar = () => {
     ];
 
     return (
-        <div className={`flex justify-between font-begriff items-center z-50 p-3 md:px-10 md:py-5 fixed top-0 w-full h-fit transition-colors duration-300
+        <div className={`flex justify-between items-center font-begriff z-50 p-3 md:px-10 md:py-5 fixed top-0 w-full h-fit transition-colors duration-300
         ${isScrolled ? "bg-[#242d2f]/85 backdrop-blur-xs" : "bg-begriff-green"}`}>
             <a href="#home">
                 <img
@@ -64,7 +64,7 @@ const NavBar = () => {
                     width={50}
                     height={50}
                     alt="logo"
-                    className="w-12 h-12 active:scale-95"
+                    className="w-10 h-10 md:w-12 md:h-12 active:scale-95"
                 />
             </a>
             <div className="flex items-center justify-evenly gap-x-5 text-begriff-white pr-[215px]">
@@ -121,12 +121,12 @@ const NavBar = () => {
                             }`}
                     >
                         <span
-                            className="block transition-transform duration-300 ease-in-out group-hover:-translate-y-12"
+                            className="block text-xs md:text-base transition-transform duration-300 ease-in-out group-hover:-translate-y-12"
                         >
                             Contact
                         </span>
                         <span
-                            className="absolute left-0 top-full w-full text-center italic font-begriff-serif transition-transform duration-300 ease-in-out group-hover:-translate-y-9"
+                            className="absolute text-xs md:text-base left-0 top-full w-full text-center italic font-begriff-serif transition-transform duration-300 ease-in-out group-hover:-translate-y-9"
                         >
                             Contact
                         </span>
@@ -135,7 +135,7 @@ const NavBar = () => {
                         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
-                        className={`relative cursor-pointer ${isSidebarOpen ? "text-black" : "delay-300 text-begriff-white"}`}
+                        className={`relative text-xs md:text-base cursor-pointer ${isSidebarOpen ? "text-black" : "delay-300 text-begriff-white"}`}
                         animate={{
                             width: 70,
                             letterSpacing: "0em",
