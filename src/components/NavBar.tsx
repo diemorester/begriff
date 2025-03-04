@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { HiMiniBars3, HiMiniBars3BottomLeft, HiXMark } from "react-icons/hi2";
 import Sidebar from "./Sidebar";
+import img0 from './../../public/logo-full.svg'
 
 const NavBar = () => {
     const [activeSection, setActiveSection] = useState("home");
@@ -47,24 +48,6 @@ const NavBar = () => {
         }
     }, [isSidebarOpen]);
 
-    useEffect(() => {
-        const handleClickSidebar = (e: MouseEvent) => {
-            if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
-                setIsSidebarOpen(false);
-            }
-        }
-
-        if (isSidebarOpen) {
-            document.addEventListener("mousedown", handleClickSidebar);
-        } else {
-            document.removeEventListener("mousedown", handleClickSidebar);
-        }
-
-        return () => {
-            document.removeEventListener("mousedown", handleClickSidebar);
-        };
-    }, [isSidebarOpen]);
-
     const navItems = [
         { name: "Home", id: "home" },
         { name: "About Us", id: "about" },
@@ -73,13 +56,13 @@ const NavBar = () => {
     ];
 
     return (
-        <div className={`flex justify-between font-begriff items-center p-3 md:px-10 md:py-5 fixed top-0 w-full h-fit transition-colors duration-300
+        <div className={`flex justify-between font-begriff items-center z-50 p-3 md:px-10 md:py-5 fixed top-0 w-full h-fit transition-colors duration-300
         ${isScrolled ? "bg-[#242d2f]/85 backdrop-blur-xs" : "bg-begriff-green"}`}>
             <a href="#home">
                 <img
-                    src="logo-full.png"
-                    width={69}
-                    height={69}
+                    src={img0}
+                    width={50}
+                    height={50}
                     alt="logo"
                     className="w-12 h-12 active:scale-95"
                 />
