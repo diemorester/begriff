@@ -24,9 +24,10 @@ const AboutUs = () => {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
-      className="w-full h-screen px-8 md:px-24 flex flex-col justify-center md:gap-y-8 items-center bg-begriff-green"
+      viewport={{ once: false }}
+      className="w-full h-screen px-8 md:px-24 flex flex-col justify-center md:gap-y-8 items-center relative bg-begriff-green"
     >
-      <motion.div className="font-begriff-serif w-full space-x-5">
+      <motion.div variants={itemVariants} custom={0} className="font-begriff-serif w-full space-x-5 z-0">
         <span className="italic border mt-[14px] text-sm rounded-3xl block float-left px-2 py-1 md:px-3 md:py-[6px] place-content-center text-center border-begriff-white text-begriff-white">About Us</span>
         <AboutUsContent text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi modi io" />
         <AboutUsContent text="incidunt impedit, facere, aspernatur consequatur distinctio at iure quia obcaecati," />
@@ -35,7 +36,9 @@ const AboutUs = () => {
       <motion.div className="flex justify-between w-full">
         <motion.div
           variants={itemVariants}
-          custom={1.5}
+          custom={1}
+          initial="hidden"
+          whileInView="visible"
           className="font-begriff text-begriff-white tracking-wider text-sm"
         >
           <p>GAK PROPORSIONAL</p>
@@ -44,7 +47,9 @@ const AboutUs = () => {
         </motion.div>
         <motion.div
           variants={itemVariants}
-          custom={1.6}
+          custom={1.1}
+          initial="hidden"
+          whileInView="visible"
           className="font-begriff font-extralight text-sm tracking-wider text-begriff-white/85 md:pt-8"
         >
           <p>Kan bole kali pak Mekel desain abstrak2 gitu, kalo khas orang miskin maapin pak.</p>

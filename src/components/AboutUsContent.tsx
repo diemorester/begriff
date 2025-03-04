@@ -11,7 +11,7 @@ const AboutUsContent = ({ text }: { text: string }) => {
 
     const letterVariants = {
         hidden: { filter: "blur(8px)", opacity: 0},
-        visible: { filter: "blur(0px)", opacity: 1, transition: { duration: 0.5}},
+        visible: { filter: "blur(0px)", opacity: 1, transition: { duration: 0.3}},
     };
 
     return (
@@ -19,11 +19,11 @@ const AboutUsContent = ({ text }: { text: string }) => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className='md:text-4xl/15 font-light text-begriff-white'
         >
             {text.split("").map((char, index) => (
-                <motion.span key={index} variants={letterVariants}>
+                <motion.span key={index} variants={letterVariants} className='relative z-10'>
                     {char}
                 </motion.span>
             ))}
