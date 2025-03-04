@@ -23,7 +23,7 @@ const Contact = () => {
           <p className="font-begriff font-bold text-sm md:text-base text-footer-head">CONTACT US</p>
           <div className="flex flex-col font-begriff pt-0.5 px-0.5">
             <a
-              href="wa.link/jj7shr"
+              href="https://wa.link/jj7shr"
               target="_blank"
               className="text-xs md:text-sm hover:text-begriff-white transition-colors duration-200 text-footer-body pt-2">
               +62 819 3210 6158
